@@ -1,0 +1,36 @@
+name: CI/CD Pipeline DevOps
+
+# Berjalan otomatis setiap ada push ke branch development
+on:
+  push:
+    branches: [ "development" ]
+
+jobs:
+  # Bagian 2: Continuous Integration (CI)
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Unit Tests
+        run: npm test
+
+  # Bagian 5: Continuous Delivery (CD)
+  deploy-to-staging:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate Deployment to Staging
+        run: |
+          echo "Test berhasil! Menjalankan deployment..."
+          echo "Deploying ke lingkungan staging AWS/Kubernetes..."
+          echo "Deployment Selesai!"
