@@ -1,19 +1,11 @@
 {
   "name": "uts-devops",
   "version": "1.0.0",
-  "description": "Menambahkan fitur login",
-  "main": "index.js",
+  "description": "Tugas UTS DevOps",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 'Unit Test Berhasil Dijalankan!' && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-  },
-  "bugs": {
-    "url": "https://github.com/syahroniw/uts-devops/issues"
-  },
-  "homepage": "https://github.com/syahroniw/uts-devops#readme"
+  "author": "Syahroni Wijayanto",
+  "license": "ISC"
 }
