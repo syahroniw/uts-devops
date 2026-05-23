@@ -8,5 +8,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+  },
+  "bugs": {
+    "url": "https://github.com/syahroniw/uts-devops/issues"
+  },
+  "homepage": "https://github.com/syahroniw/uts-devops#readme"
 }
